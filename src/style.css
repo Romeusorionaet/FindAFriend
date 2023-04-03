@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F15156;
+}
+
+header{
+    background-color: #E44449;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px;
+}
+
+header .wrapper_logo{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    padding-left: 5px;
+}
+
+header .wrapper_logo h1{
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+header .wrapper_sidebar{
+    background: white;
+
+    margin-right: 15px;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header .wrapper_sidebar img{
+    position: absolute;
+
+    width: 16px;
+    height: 16px;
+}
+
+header .wrapper_sidebar #check_menu{
+    opacity: 0;
+}
+
+/* menu */
+
+hr{
+    opacity: .2;
+    width: 93%;
+    margin: 0 0 20px 5px;
+}
+
+ul{
+    position: absolute;
+    
+    top: 80px;
+    left: 0;
+    
+    padding: 0px 20px;
+    border-radius: 0 0 20px 20px;
+
+    height: 200px;
+    width: 100%;
+    
+    background-color: #E44449;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+ul li{
+    opacity: .5;
+
+    font-weight: 500;
+    color: #FFFFFF;
+    letter-spacing: -0.02em;
+    line-height: 110%;
+    font-family: 'Nunito';
+    font-size: 18px;
+
+    list-style: none;
+}
+
+ul li:hover{
+    opacity: 1;
+}
+
+ul li:focus{
+    opacity: 1;
+}
