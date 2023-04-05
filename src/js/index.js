@@ -1,18 +1,20 @@
 const button = document.getElementById('check_menu')
 
-const menu = document.querySelector('.ul_items')
-//const span = document.querySelectorAll('span')
-fteste()
-function fteste(){
-    menu.style.display = 'none'
-}
+const closeMenu = document.querySelector('.closeMenu')
+const openMenu = document.querySelector('.openMenu')
+
+const menu = document.querySelector('.nav_items')
 
 button.addEventListener('click', ()=>{
 
     if(button.checked){
-        menu.style.display = 'flex'
+        menu.classList.toggle('hidden')
+        closeMenu.classList.toggle('hidden')
+        openMenu.classList.toggle('hidden')
     }else{
-        menu.style.display = 'none'
+        menu.classList.toggle('hidden')
+        closeMenu.classList.toggle('hidden')
+        openMenu.classList.toggle('hidden')
     }
 
 })

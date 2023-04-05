@@ -17,30 +17,70 @@
     <header>
         <div class="wrapper_logo">
             <img src="./assets/logoDog.svg" alt="logo dog" />
-            <h1>FindAFriend</h1>
+            <h2>FindAFriend</h2>
         </div>
 
         <div class="wrapper_sidebar">
-            <img src="./assets/menu.svg" alt="menu" />
+            <img class="openMenu" src="./assets/menu.svg" alt="open menu"/>
+            <img class="closeMenu hidden" src="./assets/Xmenu.svg" alt="close menu"/>
             <input type="checkbox" id="check_menu" />
         </div>
 
-        <ul class="ul_items">
-            <hr>
-            <li>Home</li>
-            <li>Sobre o app</li>
-            <li>Animais disponíveis</li>
-            <li>Sobre a FindAFriend</li>
-            <li>Contato</li>
-        </ul>
+        <nav class="nav_items hidden">
+            <ul>
+                <hr>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre o app</a></li>
+                <li><a href="#">Animais disponíveis</a></li>
+                <li><a href="#">Sobre a FindAFriend</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
         
     </header>
 
-    <main>
-        <section>
+    
+        <section class="container_1">
+            <div class="wrapper_img">
+                <div class="friendImg">
+                    <img src="./assets/friends/Arwen.jpeg" alt="friend imagem"/>
+                </div>
+                <div class="friendImg">
+                    <img src="./assets/friends/Arwen.jpeg" alt="friend imagem"/>
+                </div>
+                <div class="friendImg">
+                    <img src="./assets/friends/Arwen.jpeg" alt="friend imagem"/>
+                </div>
+                <div class="friendImg">
+                    <img src="./assets/friends/Arwen.jpeg" alt="friend imagem"/>
+                </div>
+            </div>
 
+            <div class="wrapper_text">
+                <p>324 amigos <span>na sua cidade</span></p>
+            </div>
         </section>
+
+        <section class="container_2">
+            <h1>Leve a felicidade para o seu lar</h1>
+
+            <div class="wrapper_cards">
+                <div></div>
+                <div></div>
+                <div class="dog">
+                    <img src="./assets/dog.svg" alt="dog"/>
+                    <button>Acesse agora</button>
+                </div>
+                <div></div>
+                <div></div>
+                
+            </div>
+        </section>
+
+    <main>
+
     </main>
+    
     <script src="./js/index.js"></script>
 </body>
 </html>
