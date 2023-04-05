@@ -26,6 +26,8 @@ header{
     justify-content: space-between;
 
     padding: 20px;
+    
+    /* position: fixed; */
 }
 
 header .wrapper_logo{
@@ -34,6 +36,7 @@ header .wrapper_logo{
     align-items: center;
 
     padding-left: 5px;
+    z-index: 2;
 }
 
 header .wrapper_logo h2{
@@ -66,13 +69,13 @@ header .wrapper_sidebar #check_menu{
     opacity: 0;
 }
 
-/* nav */
+/* header / nav */
 
 nav{
     position: absolute;
     top: 80px;
     left: 0;
-    min-width: 100%;
+    width: 100%;
     z-index: 1;
 }
 
@@ -84,13 +87,12 @@ hr{
 
 nav ul{
     width: 100%;
-    min-height: 200px;
+    height: 20rem;
     
     
     padding: 0px 20px;
     border-radius: 0 0 20px 20px;
 
-    
     background-color: #E44449;
 
     display: flex;
@@ -109,7 +111,7 @@ nav ul li{
     font-size: 18px;
 
     list-style: none;
-    width: 20%;
+    width: 15%;
 }
 
 nav ul li a{
@@ -135,7 +137,7 @@ nav ul li:focus{
 
 .container_1 .wrapper_img{
     display: flex;
-    padding-left: 35px;
+    padding-left: 30px;
 }
 
 .container_1 .wrapper_img .friendImg{
@@ -143,7 +145,7 @@ nav ul li:focus{
     height: 35px;
     
     border-radius: 50%;
-    margin-left: -10px;
+    margin-left: -15px;
     
     overflow: hidden;
     background-color: #F15156;;
@@ -152,8 +154,6 @@ nav ul li:focus{
 .container_1 .wrapper_img .friendImg img{
     width: 100%;
     height: 100%;
-    
-    padding: 3px;
     
     border-radius: 50%;
 }
@@ -203,7 +203,9 @@ nav ul li:focus{
     display: flex;
     gap: 40px;
     justify-content: center;
-    
+    align-items: center;
+    height: 30rem;
+    overflow: hidden;
 }
 
 .container_2 .wrapper_cards div{
@@ -253,10 +255,35 @@ nav ul li:focus{
     }
     header .wrapper_logo{
         padding-left: 6rem;
+        margin-top: 10rem;
     }
+    header .wrapper_sidebar{
+        display: none;
+    }
+    nav{
+        top: 0;
+    }
+    nav ul{
+        flex-direction: row;
+        gap: 6rem;
+        align-items: center;
+        justify-content: end;
+        background-color: #F15156;
+
+        padding-right: 12rem;
+        height: 18rem;
+        max-width: 100%;
+    }
+    nav ul li{
+        width: auto;
+    }
+    hr{
+        display: none;
+    }
+    /* === */
     .container_1{
         display: flex;
-        margin-top: 18rem;
+        margin-top: 20rem;
     }
     .container_1 .wrapper_img{
         padding-left: 9rem;
@@ -264,6 +291,7 @@ nav ul li:focus{
     .container_1 .wrapper_text{
         margin-left: -2rem;
     }
+    /* === */
     .container_2{
         padding-left: 5rem;
     }
@@ -271,6 +299,7 @@ nav ul li:focus{
         font-size: 6rem;
         line-height: 7.9rem;
         width: 400px;
+        margin: 10rem 3rem;
     }
     .container_2 .wrapper_cards{
         gap: 20px;
@@ -281,7 +310,7 @@ nav ul li:focus{
         overflow: hidden;
 
         margin-top: 18.5rem;
-        padding: 2rem 0 0 0;
+        padding: 5rem 0 0 0;
 
         max-width: 70%;
         height: 72rem;
@@ -315,5 +344,17 @@ nav ul li:focus{
     .container_2 .wrapper_cards div:nth-child(5){
         grid-area: E;
         display: block;
+    }
+    .container_2 .wrapper_cards .dog img{
+        top: -49px;
+        left: 10rem;
+        height: 50rem;
+    }
+    .container_2 .wrapper_cards button{
+        bottom: -13rem;
+        left: 5rem;
+    
+        width: 49rem;
+        height: 7rem;
     }
 }
