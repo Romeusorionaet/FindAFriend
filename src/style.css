@@ -204,6 +204,19 @@ nav ul li:focus{
     margin: 3.5rem 3rem;
 }
 
+.container_2 p{
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 34px;
+    color: #FFFFFF;
+
+    width: 30rem;
+    margin-left: 3rem;
+
+    display: none;
+}
+
 .container_2 .wrapper_cards{
     max-width: 100%;
    
@@ -280,29 +293,6 @@ main{
     grid-area: B;
 
     height: auto;
-    max-width: 69rem;
-    background: red;
-
-    padding: 2rem;
-}
-
-.wrapper_description_app .wrapper_title{
-    background: white;
-    width: 100%;
-    height: 10rem;
-    border-radius: 0;
-
-}
-
-.wrapper_description_app h2{
-    font-family: 'Nunito';
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 110%;
-    letter-spacing: -0.02em;
-    color: #0D3B66;
-
-    width: 32rem;
 }
 
 .wrapper_description_app div{
@@ -312,6 +302,38 @@ main{
     height: 20rem;
 
     border-radius: 2rem;
+    position: relative;
+
+    padding: 8rem 5rem 2rem 2rem;
+}
+
+.wrapper_description_app .wrapper_title{
+    background: white;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 12rem;
+    padding: 0;
+}
+
+.wrapper_description_app h2{
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    color: #0D3B66;
+
+    margin-left: 5rem;
+}
+
+.wrapper_description_app div img{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
 }
 
 .wrapper_description_app div p{
@@ -321,15 +343,45 @@ main{
     line-height: 110%;
     letter-spacing: -0.02em;
     color: #000000;
+
+    text-align: start;
 }
 
 /* main / wrapper_page_image */
 
 .wrapper_page_image{
     grid-area: A;
+
+    height: 30rem;
+    margin-top: 10rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper_page_image .details{
+    display: none;
+}
+
+.wrapper_page_image div{
     background: #FDECED;
 
+    width: 100%;
+    height: 20rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
+
+.wrapper_page_image img{
+    max-width: 100%;
+    margin-bottom: 8rem
+}
+
+
 
 
 
@@ -348,11 +400,12 @@ main{
 
     header .wrapper_top{
         background-color: #F15156;
+        height: 10rem;
     }
 
-    header .wrapper_logo{
+    header .wrapper_top .wrapper_logo{
         padding-left: 6rem;
-        margin-top: 5rem;
+
     }
 
     header .wrapper_sidebar{
@@ -373,7 +426,8 @@ main{
         background-color: #F15156;
 
         padding-right: 13rem;
-        height: 18rem;
+        padding-top: 3rem;
+        height: 12rem;
         max-width: 100%;
         border-radius: 0;
     }
@@ -390,7 +444,7 @@ main{
 
     .container_1{
         display: flex;
-        padding-top: 24rem;
+        padding-top: 22rem;
     }
 
     .container_1 .wrapper_img{
@@ -412,6 +466,10 @@ main{
         line-height: 7.9rem;
         width: 400px;
         margin: 7rem 3rem;
+    }
+
+    .container_2 p{
+        display: block;
     }
 
     .container_2 .wrapper_cards button{
@@ -478,7 +536,78 @@ main{
     /* main */
 
     main{
+        grid-template-columns: 1fr 1fr;
         grid-template-areas:
         "A B";
+    }
+    
+    .wrapper_description_app{
+        padding: 0 10rem 0 0;
+    }
+
+    .wrapper_description_app .wrapper_title{
+        padding: 0;
+        align-items: center;
+        height: 20rem;
+    }
+
+    .wrapper_description_app h2{
+        font-size: 4rem;
+        width: 54rem;
+        margin-left: 1rem;
+    }
+
+    .wrapper_description_app div{
+        width: 45%;
+        height: 19.7rem;
+    }
+    
+    .wrapper_description_app .thirdCard{
+        width: 91%;
+        height: 18rem;
+        
+        padding-right: 10rem;
+    }  
+
+    /* === */
+
+    .wrapper_page_image{
+        align-items: start;
+        height: 60rem;
+
+        margin-top: 0;
+        padding-top: 2rem;
+    }
+
+    .wrapper_page_image img{
+        max-width: 78%;
+    }
+    
+    .wrapper_page_image .details{
+        display: flex;
+        border-radius: 2rem;
+        
+        height: 100%;
+        width: 90%;
+
+    }
+    
+    .wrapper_page_image .details img{
+        margin-top: 6rem;
+        min-width: 78%;
+    }
+
+    .wrapper_page_image .simple{
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+    .wrapper_page_image{
+        margin-top: 8rem;
+    }
+
+    .wrapper_page_image .simple img{
+        min-width: 100%;
     }
 }
