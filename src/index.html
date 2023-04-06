@@ -15,18 +15,20 @@
 </head>
 <body>
     <header>
-        <div class="wrapper_logo">
-            <img src="./assets/logoDog.svg" alt="logo dog" />
-            <h2>FindAFriend</h2>
-        </div>
-
-        <div class="wrapper_sidebar">
-            <img class="openMenu" src="./assets/menu.svg" alt="open menu"/>
-            <img class="closeMenu hidden" src="./assets/Xmenu.svg" alt="close menu"/>
-            <input 
-            type="checkbox" 
-            id="check_menu"
-            />
+        <div class="wrapper_top">
+            <div class="wrapper_logo">
+                <img src="./assets/logoDog.svg" alt="logo dog" />
+                <h2>FindAFriend</h2>
+            </div>
+    
+            <div class="wrapper_sidebar">
+                <img class="openMenu" src="./assets/menu.svg" alt="open menu"/>
+                <img class="closeMenu hidden" src="./assets/Xmenu.svg" alt="close menu"/>
+                <input 
+                type="checkbox" 
+                id="check_menu"
+                />
+            </div>
         </div>
 
         <nav class="nav_items hidden">
@@ -40,9 +42,6 @@
             </ul>
         </nav>
         
-    </header>
-
-    
         <section class="container_1">
             <div class="wrapper_img">
                 <div class="friendImg">
@@ -58,15 +57,15 @@
                     <img src="./assets/friends/animal4.svg" alt="friend animal"/>
                 </div>
             </div>
-
+            
             <div class="wrapper_text">
                 <p>324 amigos <span>na sua cidade</span></p>
             </div>
         </section>
-
+        
         <section class="container_2">
             <h1>Leve a felicidade para o seu lar</h1>
-
+            
             <div class="wrapper_cards">
                 <div></div>
                 <div></div>
@@ -79,23 +78,47 @@
                 
             </div>
         </section>
+        
+    </header>
 
     <main>
-        <!-- <div class="wrapper_img">
-            <div class="friendImg">
-                <img src="./assets/friends/Arwen.jpeg" alt="friend imagem"/>
+        <section class="wrapper_description_app">
+            <div class="wrapper_title">
+                <h2>Um app não, uma caixinha de amigos...</h2>
             </div>
-            <div class="friendImg">
-                <img src="./assets/friends/Arwen.jpeg" alt="friend imagem"/>
-            </div>
-            <div class="friendImg">
-                <img src="./assets/friends/Arwen.jpeg" alt="friend imagem"/>
-            </div>
-            <div class="friendImg">
-                <img src="./assets/friends/Arwen.jpeg" alt="friend imagem"/>
-            </div>
-        </div> -->
 
+            <div class="firstCard">
+                <img src="./assets/icons/iconDog.svg" alt="icon Dog"/>
+                <p>
+                    O <strong>FindAFriend</strong> é um produto desenvolvido para você encontrar
+                    animal de estimação ideal ao seu estilo de vida!
+                </p>
+            </div>
+
+            <div class="secondCard">
+                <img src="./assets/icons/iconCat.svg" alt="icon Cat"/>
+                    
+                <p>
+                    <strong>ONGs</strong> cadastram os bichinhos disponíveis para adoção informando características como: 
+                    porte, nível de energia, nível de independência, sociabilidade e gênero.
+                </p>
+            </div>
+
+            <div class="thirdCard">
+                <img src="./assets/icons/iconDog2.svg" alt="icon Dog"/>
+                
+                <p>
+                    <strong>Filtre os bichinhos</strong> de acordo com suas preferências e lifestyle. Depois é só entrar em contato com 
+                    a ONG para agendar uma visita e conhecer pessoalmente seu <strong>match perfeito!</strong>
+                </p>
+            </div>
+
+        </section>
+        
+        <div class="wrapper_page_image">
+            <img src="./assets/pageImg.svg" alt="page demonstration portatil"/>
+
+        </div>
     </main>
     
     <script src="./js/index.js"></script>

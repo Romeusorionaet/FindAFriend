@@ -13,30 +13,37 @@
 }
 
 body{
-    background-color: #F15156;
 }
 
+/* header / top */
+
 header{
-    background-color: #E44449;
-    height: 80px;
+    background-color: #F15156;
     width: 100%;
+    height: 72rem;
+}
 
+header .wrapper_top{
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 
-    padding: 20px;
+    padding: 0 2rem;
     
-    /* position: fixed; */
+    height: 8rem;
+    width: 100%;
+    background-color: #E44449;
+
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 
 header .wrapper_logo{
     display: flex;
     gap: 8px;
     align-items: center;
-
-    padding-left: 5px;
-    z-index: 2;
+    z-index: 3;
 }
 
 header .wrapper_logo h2{
@@ -74,9 +81,10 @@ header .wrapper_sidebar #check_menu{
 nav{
     position: absolute;
     top: 80px;
-    left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
+
+    position: fixed;
 }
 
 hr{
@@ -89,12 +97,11 @@ nav ul{
     width: 100%;
     height: 20rem;
     
-    
     padding: 0px 20px;
     border-radius: 0 0 20px 20px;
-
+    
     background-color: #E44449;
-
+    
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -111,7 +118,7 @@ nav ul li{
     font-size: 18px;
 
     list-style: none;
-    width: 15%;
+    width: 16rem;
 }
 
 nav ul li a{
@@ -128,11 +135,11 @@ nav ul li:focus{
     opacity: 1;
 }
 
-/* section / container_1 */
+/* header / section / container_1 */
 
 .container_1{
     width: 100%;
-    margin-top: 50px;
+    padding-top: 12rem;
 }
 
 .container_1 .wrapper_img{
@@ -175,7 +182,7 @@ nav ul li:focus{
     font-weight: 400;
 }
 
-/* section / container_2 */
+/* header / section / container_2 */
 
 .container_2{
     /* falta detalhe */
@@ -194,7 +201,7 @@ nav ul li:focus{
     color: white;
 
     width: 300px;
-    margin: 7rem 3rem;
+    margin: 3.5rem 3rem;
 }
 
 .container_2 .wrapper_cards{
@@ -247,22 +254,117 @@ nav ul li:focus{
 
     border-radius: 8px;
     border: none;
+
+    font-family: 'Nunito';
+    font-weight: 800;
+    font-size: 14px;
+    color: #0D3B66;
 }
 
+/* main / section */
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "B"
+    "A";
+}
+
+.wrapper_description_app{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+    grid-area: B;
+
+    height: auto;
+    max-width: 69rem;
+    background: red;
+
+    padding: 2rem;
+}
+
+.wrapper_description_app .wrapper_title{
+    background: white;
+    width: 100%;
+    height: 10rem;
+    border-radius: 0;
+
+}
+
+.wrapper_description_app h2{
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    color: #0D3B66;
+
+    width: 32rem;
+}
+
+.wrapper_description_app div{
+    background: #FDECED;
+
+    width: 32rem;
+    height: 20rem;
+
+    border-radius: 2rem;
+}
+
+.wrapper_description_app div p{
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+/* main / wrapper_page_image */
+
+.wrapper_page_image{
+    grid-area: A;
+    background: #FDECED;
+
+}
+
+
+
+
+
+
+
+/* @media queries */
+
 @media (min-width: 1200px){
+    /* header */
+
     header{
+        height: 82rem;
+    }
+
+    header .wrapper_top{
         background-color: #F15156;
     }
+
     header .wrapper_logo{
         padding-left: 6rem;
-        margin-top: 10rem;
+        margin-top: 5rem;
     }
+
     header .wrapper_sidebar{
         display: none;
     }
+
     nav{
-        top: 0;
+        top: -25px;
+        right: 0;
+        width: 78%;
     }
+
     nav ul{
         flex-direction: row;
         gap: 6rem;
@@ -270,37 +372,52 @@ nav ul li:focus{
         justify-content: end;
         background-color: #F15156;
 
-        padding-right: 12rem;
+        padding-right: 13rem;
         height: 18rem;
         max-width: 100%;
+        border-radius: 0;
     }
+
     nav ul li{
         width: auto;
     }
+
     hr{
         display: none;
     }
+
     /* === */
+
     .container_1{
         display: flex;
-        margin-top: 20rem;
+        padding-top: 24rem;
     }
+
     .container_1 .wrapper_img{
         padding-left: 9rem;
     }
+
     .container_1 .wrapper_text{
         margin-left: -2rem;
     }
+
     /* === */
+
     .container_2{
         padding-left: 5rem;
     }
+
     .container_2 h1{
         font-size: 6rem;
         line-height: 7.9rem;
         width: 400px;
-        margin: 10rem 3rem;
+        margin: 7rem 3rem;
     }
+
+    .container_2 .wrapper_cards button{
+        font-size: 20px;
+    }
+
     .container_2 .wrapper_cards{
         gap: 20px;
         position: absolute;
@@ -309,11 +426,11 @@ nav ul li:focus{
 
         overflow: hidden;
 
-        margin-top: 18.5rem;
+        margin-top: 15.2rem;
         padding: 5rem 0 0 0;
 
         max-width: 70%;
-        height: 72rem;
+        height: 66.8rem;
 
         display: grid;
         grid-template-columns: 1fr 10rem;
@@ -325,7 +442,7 @@ nav ul li:focus{
     .container_2 .wrapper_cards div:nth-child(3){
         grid-area: C;
         max-width: 59rem;
-        height: 45rem;
+        height: 39rem;
     }
     .container_2 .wrapper_cards div:nth-child(1){
         grid-area: A;
@@ -348,7 +465,7 @@ nav ul li:focus{
     .container_2 .wrapper_cards .dog img{
         top: -49px;
         left: 10rem;
-        height: 50rem;
+        height: 44rem;
     }
     .container_2 .wrapper_cards button{
         bottom: -13rem;
@@ -356,5 +473,12 @@ nav ul li:focus{
     
         width: 49rem;
         height: 7rem;
+    }
+
+    /* main */
+
+    main{
+        grid-template-areas:
+        "A B";
     }
 }
