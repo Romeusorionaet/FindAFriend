@@ -6,6 +6,16 @@
 
 :root {
     font-size: 62.5%;
+
+    --font-ff: 'Nunito';
+    --font-fc: #FFFFFF;
+    --font-fc-title-card: #0D3B66;
+    --font-fc-card: #000000;
+    --font-fc-y: #F0D45E;
+
+    --font-bg: #F15156;
+    --font-bg-2: #E44449;
+    --font-bg-3: #FDECED;
 }
 
 .hidden{
@@ -18,7 +28,7 @@ body{
 /* header / top */
 
 header{
-    background-color: #F15156;
+    background-color: var(--font-bg);
     width: 100%;
     height: 72rem;
 }
@@ -32,7 +42,7 @@ header .wrapper_top{
     
     height: 8rem;
     width: 100%;
-    background-color: #E44449;
+    background-color: var(--font-bg-2);
 
     position: fixed;
     top: 0;
@@ -47,13 +57,13 @@ header .wrapper_logo{
 }
 
 header .wrapper_logo h2{
-    color: white;
+    color: var(--font-fc);
     font-weight: 500;
     font-size: 22px;
 }
 
 header .wrapper_sidebar{
-    background: white;
+    background-color: var(--font-fc);
 
     width: 40px;
     height: 40px;
@@ -100,7 +110,7 @@ nav ul{
     padding: 0px 20px;
     border-radius: 0 0 20px 20px;
     
-    background-color: #E44449;
+    background-color: var(--font-bg-2);
     
     display: flex;
     flex-direction: column;
@@ -111,10 +121,10 @@ nav ul li{
     opacity: .6;
 
     font-weight: 500;
-    color: #FFFFFF;
+    color: var(--font-fc);
     letter-spacing: -0.02em;
     line-height: 110%;
-    font-family: 'Nunito';
+    font-family: var(--font-ff);
     font-size: 18px;
 
     list-style: none;
@@ -123,7 +133,7 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: white;
+    color: var(--font-fc);
 }
 
 nav ul li:hover{
@@ -155,7 +165,7 @@ nav ul li:focus{
     margin-left: -15px;
     
     overflow: hidden;
-    background-color: #F15156;;
+    background-color: var(--font-bg);
 }
 
 .container_1 .wrapper_img .friendImg img{
@@ -171,10 +181,10 @@ nav ul li:focus{
 }
 
 .container_1 .wrapper_text p{
-    color: white;
+    color: var(--font-fc);
     font-weight: 800;
     font-size: 14px;
-    font-family: 'Nunito';
+    font-family: var(--font-ff);
 }
 
 .container_1 .wrapper_text p span{
@@ -185,7 +195,6 @@ nav ul li:focus{
 /* header / section / container_2 */
 
 .container_2{
-    /* falta detalhe */
     width: 100%;
     
     display: flex;
@@ -193,23 +202,23 @@ nav ul li:focus{
 }
 
 .container_2 h1{
-    font-family: 'Nunito';
+    font-family: var(--font-ff);
     font-weight: 700;
     line-height: 48.4px;
     leter-spacing: -2%;
     font-size: 4.4rem;
-    color: white;
+    color: var(--font-fc);
 
     width: 300px;
     margin: 3.5rem 3rem;
 }
 
 .container_2 p{
-    font-family: 'Nunito';
+    font-family: var(--font-ff);
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 34px;
-    color: #FFFFFF;
+    color: var(--font-fc);
 
     width: 30rem;
     margin-left: 3rem;
@@ -229,13 +238,13 @@ nav ul li:focus{
 }
 
 .container_2 .wrapper_cards div{
-    background: #E44449;
+    background-color: var(--font-bg-2);
     min-width: 28rem;
     height: 25.5rem;
 
     border-radius: 20px;
 
-    color: white;
+    color: var(--font-fc);
 }
 
 .container_2 .wrapper_cards div:nth-child(1){
@@ -248,7 +257,7 @@ nav ul li:focus{
 
 .container_2 .wrapper_cards .dog{
     position: relative;
-    background: linear-gradient(210deg, #F36A6F 17.23%, #E44449 73.77%);
+    background: linear-gradient(210deg, #F36A6F 17.23%, var(--font-bg-2) 73.77%);
 }
 
 .container_2 .wrapper_cards .dog img{
@@ -268,13 +277,13 @@ nav ul li:focus{
     border-radius: 8px;
     border: none;
 
-    font-family: 'Nunito';
+    font-family: var(--font-ff);
     font-weight: 800;
     font-size: 14px;
-    color: #0D3B66;
+    color: var(--font-fc-title-card);
 }
 
-/* main / section */
+/* main / wrapper_description_app */
 
 main{
     display: grid;
@@ -296,7 +305,7 @@ main{
 }
 
 .wrapper_description_app div{
-    background: #FDECED;
+    background-color: var(--font-bg-3);
 
     width: 32rem;
     height: 20rem;
@@ -320,12 +329,12 @@ main{
 }
 
 .wrapper_description_app h2{
-    font-family: 'Nunito';
+    font-family: var(--font-ff);
     font-weight: 700;
     font-size: 3rem;
     line-height: 110%;
     letter-spacing: -0.02em;
-    color: #0D3B66;
+    color: var(--font-fc-title-card);
 
     margin-left: 5rem;
 }
@@ -337,12 +346,12 @@ main{
 }
 
 .wrapper_description_app div p{
-    font-family: 'Nunito';
+    font-family: var(--font-ff);
     font-weight: 400;
     font-size: 14px;
     line-height: 110%;
     letter-spacing: -0.02em;
-    color: #000000;
+    color: var(--font-fc-card);
 
     text-align: start;
 }
@@ -365,7 +374,7 @@ main{
 }
 
 .wrapper_page_image div{
-    background: #FDECED;
+    background-color: var(--font-bg-3);
 
     width: 100%;
     height: 20rem;
@@ -381,10 +390,40 @@ main{
     margin-bottom: 8rem
 }
 
+/* main / wrapper_longFriends */
 
+.wrapper_longFriends{
+    background-color: var(--font-bg);
+}
 
+.wrapper_longFriends .titleAndButton{
+    width: 24rem;
+    height: 5.5rem;
 
+    border-radius: 8px;
+    border: none;
 
+    font-family: var(--font-ff);
+    font-weight: 800;
+    font-size: 14px;
+    color: var(--font-fc-title-card);
+}
+
+.wrapper_longFriends .titleAndButton h2{
+    color: var(--font-fc-y);
+    font-family: var(--font-ff);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 90%;
+}
+
+.wrapper_longFriends .textAndCarousel{
+
+}
+
+.wrapper_longFriends .textAndCarousel p{
+
+}
 
 
 
@@ -399,7 +438,7 @@ main{
     }
 
     header .wrapper_top{
-        background-color: #F15156;
+        background-color: var(--font-bg);
         height: 10rem;
     }
 
@@ -423,7 +462,7 @@ main{
         gap: 6rem;
         align-items: center;
         justify-content: end;
-        background-color: #F15156;
+        background-color: var(--font-bg);
 
         padding-right: 13rem;
         padding-top: 3rem;
@@ -506,12 +545,15 @@ main{
         grid-area: A;
         height: 100%;
         display: block;
+
+        animation: cardRotate 1s ease-in-out;
     }
     .container_2 .wrapper_cards div:nth-child(2){
         grid-area: B;
         width: 59rem;
         height: 15rem;
-
+        
+        animation: cardRotate 1s ease-in-out;
     }
     .container_2 .wrapper_cards div:nth-child(4){
         grid-area: D;
@@ -589,7 +631,6 @@ main{
         
         height: 100%;
         width: 90%;
-
     }
     
     .wrapper_page_image .details img{
@@ -609,5 +650,16 @@ main{
 
     .wrapper_page_image .simple img{
         min-width: 100%;
+    }
+}
+
+/* keyframes */
+
+@keyframes cardRotate {
+    0%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(0deg);
     }
 }
