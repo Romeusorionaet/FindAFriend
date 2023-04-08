@@ -290,7 +290,8 @@ main{
     grid-template-columns: 1fr;
     grid-template-areas:
     "B"
-    "A";
+    "A"
+    "C";
 }
 
 .wrapper_description_app{
@@ -394,14 +395,50 @@ main{
 
 .wrapper_longFriends{
     background-color: var(--font-bg);
+    
+    grid-area: C;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.wrapper_longFriends .titleAndButton{
+.wrapper_longFriends .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+
+    padding: 6rem 3rem 2rem;
+}
+
+.wrapper_longFriends .text h2{
+    color: var(--font-fc-y);
+    font-family: var(--font-ff);
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 90%;
+    text-align: center;
+}
+
+.wrapper_longFriends .text p{
+    font-family: var(--font-ff);
+    font-weight: 800;
+    font-size: 16px;
+    color: var(--font-fc-title-card);
+    text-align: start;
+
+    padding: 0 2rem;
+}
+
+.wrapper_longFriends button{
     width: 24rem;
     height: 5.5rem;
 
     border-radius: 8px;
     border: none;
+
+    margin: 1rem 3rem;
 
     font-family: var(--font-ff);
     font-weight: 800;
@@ -409,20 +446,55 @@ main{
     color: var(--font-fc-title-card);
 }
 
-.wrapper_longFriends .titleAndButton h2{
-    color: var(--font-fc-y);
-    font-family: var(--font-ff);
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 90%;
+.wrapper_longFriends .wrapper_carousel .swiper{
+    width: 30rem;
+    height: 20rem;
 }
 
-.wrapper_longFriends .textAndCarousel{
-
+.swiper .swiper-pagination{
+    display: none;
 }
 
-.wrapper_longFriends .textAndCarousel p{
+.swiper .swiper-button-next, .swiper-button-prev{
+    border: 1px solid white;
+    border-radius: 1.5rem;
+    
+    background: white;
 
+    width: 7.2rem;
+    height: 7.2rem;
+
+    display: none;
+}
+
+.swiper .swiper-button-next::after, .swiper-button-prev::after{
+    content: "";
+}
+
+.swiper .swiper-wrapper .swiper-slide{
+    text-align: center;
+    font-size: 18px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper .swiper-wrapper .swiper-slide .card{
+    border-radius: 1.8rem;
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1px;
+    height: 18rem;
+}
+
+.swiper .swiper-wrapper .swiper-slide .card img{
+    width: 26rem;
+    margin-bottom: 10px;
 }
 
 
@@ -580,7 +652,8 @@ main{
     main{
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-        "A B";
+        "A B"
+        "C C";
     }
     
     .wrapper_description_app{
@@ -640,6 +713,57 @@ main{
 
     .wrapper_page_image .simple{
         display: none;
+    }
+
+    /* wrapper_longFriends */
+
+    .wrapper_longFriends .text{
+        flex-direction: row;
+        justify-content: space-around;
+
+        width: 100%;
+    }
+
+    .wrapper_longFriends .text p{
+        width: 60rem;
+    }
+
+    .wrapper_longFriends .wrap{
+        display: flex;
+        justify-content: space-around;;
+
+        width: 100%;
+    }
+
+    .wrapper_longFriends .wrap button{
+        margin-left: 5rem;
+        margin-top: 10rem;
+    }
+
+    .swiper .swiper-button-next, .swiper-button-prev{
+        display: flex;
+        color: black;
+        font-size: 2.4rem;
+    }
+
+    .wrap .wrapper_carousel .swiper{
+        width: 60rem;
+        height: 24rem;
+        margin-right: 7rem;
+    }
+
+    .swiper .swiper-wrapper .swiper-slide .card{
+        background: red;
+        height: 30rem;
+    }
+
+    .swiper .swiper-wrapper .swiper-slide .card img{
+        width: 38rem;
+        height: 26rem;
+    }
+
+    .wrap .swiper .swiper-pagination{
+        display: block;
     }
 }
 

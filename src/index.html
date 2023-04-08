@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta 
+    name="description" 
+    content="Projeto com foco em adoção de animais proposto pela empresa Rocketseat"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Nunito&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    
+    <link rel="shortcut icon" href="./assets/images/icon.svg" type="image/x-svg" />
 
     <link rel="stylesheet" href='style.css'>
 
@@ -77,7 +85,6 @@
                 </div>
                 <div></div>
                 <div></div>
-                
             </div>
         </section>
         
@@ -127,24 +134,61 @@
         </section>
 
         <section class="wrapper_longFriends">
-            <div class="titleAndButton">
-                <h2>Há muitos amigos esperando por você!</h2>
-                <button>Acesse agora</button>
-            </div>
-
-            <div class="textAndCarousel">
+            <div class="text">
+                <h2>Há muitos <br> amigos esperando <br> por você!</h2>
                 <p>
                     O FiendAFriend conecta pessoas que estão procurando por um animal de estimação com animais que precisam de um lar amoroso. 
                     É fácil de usar e você pode navegar por uma variedade de animais para encontrar aquele que melhor se adapta ao seu estilo de vida e necessidades.
                 </p>
-                <div class="carousel">
-
+            </div>
+            
+            <div class="wrap">
+                <button>Acesse agora</button>
+                
+                <div class="wrapper_carousel">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img 
+                                    src="./assets/friends/cleiton.svg" 
+                                    alt="Dog, his name is Cleiton" 
+                                    />
+                                    <span>Cleiton</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img 
+                                    src="./assets/friends/aldo.svg" 
+                                    alt="Cat, his name is Aldo" 
+                                    />
+                                    <span>Aldo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev">
+                            <i class="ph ph-caret-left arrow arrow--left"></i>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class="ph ph-caret-right arrow arrow--right"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </section>
     </main>
     
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
 </body>
 </html>
