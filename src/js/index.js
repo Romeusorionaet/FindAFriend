@@ -18,7 +18,6 @@ function startScreenWidthCalculation(){
 }
 
 button.addEventListener('click', ()=>{
-
     if(button.checked){
         menu.classList.remove('hidden')
         closeMenu.classList.toggle('hidden')
@@ -33,38 +32,31 @@ button.addEventListener('click', ()=>{
 // swiper slider
 
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
     direction: 'horizontal',
     loop: false,
-  
-    // If we need pagination
+    spaceBetween: -10,
+    slidesPerView: window.innerWidth < 1200 ? 1.2 : 1,
+    
     pagination: {
       el: '.swiper-pagination',
     },
     
-    // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    
 });
 
-// let inicialLength = swiper.slidesEl.childElementCount
-
-// buttonSliderNext.addEventListener('click', ()=>{
-//     let atualLength = inicialLength - 1;
-
-//     console.log(inicialLength)
-//     console.log(atualLength)
-//    // console.log(swiper.slidesEl.childElementCount)
-
-// })
-
-// buttonSliderPrev.addEventListener('click', ()=>{
-//     console.log(swiper.slidesEl.childElementCount)
-
-// })
+const swiperEquip = new Swiper('.swiperEquip', {
+    direction: 'horizontal',
+    loop: false,
+    spaceBetween: window.innerWidth < 1200 ? 10 : 40,
+    slidesPerView: window.innerWidth < 1200 ? 1.2 : 4,
+    
+    pagination: {
+      el: '.swiper-pagination',
+    },
+});
 
 
 

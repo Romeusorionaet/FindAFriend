@@ -31,6 +31,8 @@ header{
     background-color: var(--font-bg);
     width: 100%;
     height: 72rem;
+
+    border-radius: 2rem;
 }
 
 header .wrapper_top{
@@ -291,7 +293,8 @@ main{
     grid-template-areas:
     "B"
     "A"
-    "C";
+    "C"
+    "D";
 }
 
 .wrapper_description_app{
@@ -363,7 +366,7 @@ main{
     grid-area: A;
 
     height: 30rem;
-    margin-top: 10rem;
+    margin: 10rem 0 5rem 0;
 
     display: flex;
     justify-content: center;
@@ -383,7 +386,6 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .wrapper_page_image img{
@@ -395,8 +397,12 @@ main{
 
 .wrapper_longFriends{
     background-color: var(--font-bg);
-    
+
+    height: 70rem;
+
     grid-area: C;
+
+    border-radius: 2rem;
     
     display: flex;
     flex-direction: column;
@@ -432,13 +438,13 @@ main{
 }
 
 .wrapper_longFriends button{
-    width: 24rem;
+    width: 26rem;
     height: 5.5rem;
 
     border-radius: 8px;
     border: none;
 
-    margin: 1rem 3rem;
+    margin: 1rem 3rem 3rem 4rem;
 
     font-family: var(--font-ff);
     font-weight: 800;
@@ -446,16 +452,15 @@ main{
     color: var(--font-fc-title-card);
 }
 
-.wrapper_longFriends .wrapper_carousel .swiper{
-    width: 30rem;
-    height: 20rem;
+.wrapper_carousel .swiper{
+    width: 34rem;
 }
 
-.swiper .swiper-pagination{
+.swiper-pagination{
     display: none;
 }
 
-.swiper .swiper-button-next, .swiper-button-prev{
+.swiper-button-next, .swiper-button-prev{
     border: 1px solid white;
     border-radius: 1.5rem;
     
@@ -467,11 +472,11 @@ main{
     display: none;
 }
 
-.swiper .swiper-button-next::after, .swiper-button-prev::after{
+.swiper-button-next::after, .swiper-button-prev::after{
     content: "";
 }
 
-.swiper .swiper-wrapper .swiper-slide{
+.swiper-wrapper .swiper-slide{
     text-align: center;
     font-size: 18px;
     
@@ -481,23 +486,146 @@ main{
 }
 
 .swiper .swiper-wrapper .swiper-slide .card{
-    border-radius: 1.8rem;
+    border-radius: 2.7rem;
     background: white;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    padding: 1px;
     height: 18rem;
 }
 
 .swiper .swiper-wrapper .swiper-slide .card img{
     width: 26rem;
     margin-bottom: 10px;
+    border-radius: 2.7;
 }
 
+.swiper .swiper-wrapper .swiper-slide .card p{
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+}
 
+/* main / contact_team */
+
+.contact_team{
+    grid-area: D;
+    padding: 3rem 2.2rem 0;
+    overflow: hidden;
+}
+
+.wrapper_carousel .swiperEquip{
+    width: 32rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.contact_team .wrapper_text{
+    max-width: 52rem;
+    margin: 0 auto 6rem;
+}
+
+.contact_team .wrapper_text h3{
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 110%;
+    color: #0D3B66;
+
+    margin-bottom: 2rem;
+    width: 20rem;
+}
+
+.contact_team .wrapper_text p{
+    color: #0D3B66;
+    font-family: 'Nunito';
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+}
+
+.contact_team .wrapper_carousel{
+    margin-bottom: 4rem;
+    height: 28rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.contact_team .swiper-slide .card{
+    height: 28rem;
+    border-radius: 2rem;
+
+    padding: 6px;
+
+    background-color: var(--font-bg-3);
+}
+
+.contact_team .swiper-slide .card img{
+    min-height: 18rem;
+    margin-bottom: 2.2rem;
+}
+
+.contact_team .swiper-slide .card p{
+    font-family: 'Nunito';
+    font-weight: 700;
+    line-height: 120%;
+    font-size: 1.8rem;
+    color: #0D3B66;
+}
+
+.contact_team .swiper-slide .card span{
+    font-weight: 400;
+    font-family: 'Nunito';
+    color: #0D3B66;
+    font-size: 1.8rem;
+}
+
+/* main / contact_team / contact*/
+
+.contact {
+    margin-bottom: 16rem;
+
+    height: 30rem;
+    padding-top: 3.5%;
+    
+    background: white;
+    position: relative;
+}
+
+.contact img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    max-width: 98%;
+}
+
+.contact .wrap{
+    background: #0D3B66;
+    border-radius: 1rem;
+    
+    z-index: 1;
+    height: 100%;
+}
+
+.contact .wrap .text{
+    padding: 9rem 3.2rem;
+    background: red;
+}
+
+.contact .wrap .text h3{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    color: white;
+
+    margin-bottom: 1.8rem;
+}
 
 
 /* @media queries */
@@ -507,6 +635,7 @@ main{
 
     header{
         height: 82rem;
+        border-radius: 0;
     }
 
     header .wrapper_top{
@@ -516,7 +645,6 @@ main{
 
     header .wrapper_top .wrapper_logo{
         padding-left: 6rem;
-
     }
 
     header .wrapper_sidebar{
@@ -653,25 +781,27 @@ main{
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
         "A B"
-        "C C";
+        "C C"
+        "D D";
     }
     
     .wrapper_description_app{
-        padding: 0 10rem 0 0;
+        padding: 3rem 10rem 0 0;
+        gap: 2rem;
     }
-
+    
     .wrapper_description_app .wrapper_title{
         padding: 0;
         align-items: center;
-        height: 20rem;
+        height: 10rem;
     }
-
+    
     .wrapper_description_app h2{
         font-size: 4rem;
         width: 54rem;
         margin-left: 1rem;
     }
-
+    
     .wrapper_description_app div{
         width: 45%;
         height: 19.7rem;
@@ -681,6 +811,7 @@ main{
         width: 91%;
         height: 18rem;
         
+        margin-top: -5rem;
         padding-right: 10rem;
     }  
 
@@ -717,11 +848,21 @@ main{
 
     /* wrapper_longFriends */
 
+    .wrapper_longFriends{
+        height: 55rem;
+        margin-top: 2rem;
+    }
+
     .wrapper_longFriends .text{
         flex-direction: row;
         justify-content: space-around;
 
         width: 100%;
+    }
+
+    .wrapper_longFriends .text h2{
+        text-align: start;
+        margin-top: 2rem;;
     }
 
     .wrapper_longFriends .text p{
@@ -737,7 +878,7 @@ main{
 
     .wrapper_longFriends .wrap button{
         margin-left: 5rem;
-        margin-top: 10rem;
+        margin-top: 15rem;
     }
 
     .swiper .swiper-button-next, .swiper-button-prev{
@@ -748,24 +889,75 @@ main{
 
     .wrap .wrapper_carousel .swiper{
         width: 60rem;
-        height: 24rem;
-        margin-right: 7rem;
+        height: 36rem;
+
+        margin: -2rem 14rem 0 0;
+        padding-top: 2rem;
     }
 
     .swiper .swiper-wrapper .swiper-slide .card{
-        background: red;
-        height: 30rem;
+        height: 26rem;
+    }
+
+    .swiper .swiper-wrapper .swiper-slide .card p{
+        margin-top: -2.5rem;
+        font-weight: 700;
     }
 
     .swiper .swiper-wrapper .swiper-slide .card img{
         width: 38rem;
         height: 26rem;
+        margin-top: -3.5rem;
     }
 
     .wrap .swiper .swiper-pagination{
         display: block;
     }
+
+    /* main / contact_team */
+
+    .contact_team{
+        grid-area: D;
+        padding: 3rem 11.2rem 0;
+    }
+
+    .contact_team .wrapper_text{
+        max-width: 100%;
+        display: flex;
+        gap: 2rem;
+
+        padding-left: 2rem;
+    } 
+
+    .contact_team .wrapper_text p{
+        width: 69rem;
+    }
+    
+    .contact_team .wrapper_text h3{
+        margin: 0;
+    }
+    
+    .contact_team .swiperEquip{
+        max-width: 100%;
+    }
+
+    .wrapper_carousel .swiperEquip{
+        width: 100%;
+    }
+
+    .contact_team .wrapper_carousel{
+        margin-bottom: 14rem;
+    }
+    
+    .contact_team .swiperEquip .card{
+        max-width: 18vw;
+    }
+
+    .contact_team .swiperEquip .card img{
+        max-width: 100%;
+    }
 }
+
 
 @media (max-width: 600px){
     .wrapper_page_image{
@@ -774,6 +966,10 @@ main{
 
     .wrapper_page_image .simple img{
         min-width: 100%;
+    }
+
+    .wrapper_longFriends{
+        height: 75rem;
     }
 }
 
