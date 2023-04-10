@@ -16,6 +16,11 @@
     --font-bg: #F15156;
     --font-bg-2: #E44449;
     --font-bg-3: #FDECED;
+    --font-bg-4: #0D3B66;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a{
+    font-family: var(--font-ff);
 }
 
 .hidden{
@@ -126,7 +131,6 @@ nav ul li{
     color: var(--font-fc);
     letter-spacing: -0.02em;
     line-height: 110%;
-    font-family: var(--font-ff);
     font-size: 18px;
 
     list-style: none;
@@ -186,7 +190,6 @@ nav ul li:focus{
     color: var(--font-fc);
     font-weight: 800;
     font-size: 14px;
-    font-family: var(--font-ff);
 }
 
 .container_1 .wrapper_text p span{
@@ -204,7 +207,6 @@ nav ul li:focus{
 }
 
 .container_2 h1{
-    font-family: var(--font-ff);
     font-weight: 700;
     line-height: 48.4px;
     leter-spacing: -2%;
@@ -216,7 +218,6 @@ nav ul li:focus{
 }
 
 .container_2 p{
-    font-family: var(--font-ff);
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 34px;
@@ -279,7 +280,6 @@ nav ul li:focus{
     border-radius: 8px;
     border: none;
 
-    font-family: var(--font-ff);
     font-weight: 800;
     font-size: 14px;
     color: var(--font-fc-title-card);
@@ -333,7 +333,6 @@ main{
 }
 
 .wrapper_description_app h2{
-    font-family: var(--font-ff);
     font-weight: 700;
     font-size: 3rem;
     line-height: 110%;
@@ -350,7 +349,6 @@ main{
 }
 
 .wrapper_description_app div p{
-    font-family: var(--font-ff);
     font-weight: 400;
     font-size: 14px;
     line-height: 110%;
@@ -420,7 +418,6 @@ main{
 
 .wrapper_longFriends .text h2{
     color: var(--font-fc-y);
-    font-family: var(--font-ff);
     font-weight: 700;
     font-size: 34px;
     line-height: 90%;
@@ -428,7 +425,6 @@ main{
 }
 
 .wrapper_longFriends .text p{
-    font-family: var(--font-ff);
     font-weight: 800;
     font-size: 16px;
     color: var(--font-fc-title-card);
@@ -446,7 +442,6 @@ main{
 
     margin: 1rem 3rem 3rem 4rem;
 
-    font-family: var(--font-ff);
     font-weight: 800;
     font-size: 14px;
     color: var(--font-fc-title-card);
@@ -461,7 +456,7 @@ main{
 }
 
 .swiper-button-next, .swiper-button-prev{
-    border: 1px solid white;
+    border: 1px solid var(--font-fc);
     border-radius: 1.5rem;
     
     background: white;
@@ -487,7 +482,7 @@ main{
 
 .swiper .swiper-wrapper .swiper-slide .card{
     border-radius: 2.7rem;
-    background: white;
+    background-color: var(--font-fc);
 
     display: flex;
     flex-direction: column;
@@ -503,7 +498,6 @@ main{
 }
 
 .swiper .swiper-wrapper .swiper-slide .card p{
-    font-family: 'Nunito';
     font-weight: 400;
     font-size: 16px;
     line-height: 120%;
@@ -529,19 +523,17 @@ main{
 }
 
 .contact_team .wrapper_text h3{
-    font-family: 'Nunito';
     font-weight: 700;
     font-size: 3rem;
     line-height: 110%;
-    color: #0D3B66;
+    color: var(--font-bg-4);
 
     margin-bottom: 2rem;
     width: 20rem;
 }
 
 .contact_team .wrapper_text p{
-    color: #0D3B66;
-    font-family: 'Nunito';
+    color: var(--font-bg-4);
     font-size: 2rem;
     font-weight: 400;
     line-height: 110%;
@@ -570,17 +562,15 @@ main{
 }
 
 .contact_team .swiper-slide .card p{
-    font-family: 'Nunito';
     font-weight: 700;
     line-height: 120%;
     font-size: 1.8rem;
-    color: #0D3B66;
+    color: var(--font-bg-4);
 }
 
 .contact_team .swiper-slide .card span{
     font-weight: 400;
-    font-family: 'Nunito';
-    color: #0D3B66;
+    color: var(--font-bg-4);
     font-size: 1.8rem;
 }
 
@@ -592,7 +582,7 @@ main{
     height: 30rem;
     padding-top: 3.5%;
     
-    background: white;
+    background-color: var(--font-fc);
     position: relative;
 }
 
@@ -602,30 +592,47 @@ main{
     right: 0;
     
     max-width: 98%;
+    z-index: 1;
 }
 
 .contact .wrap{
-    background: #0D3B66;
+    background-color: var(--font-bg-4);
     border-radius: 1rem;
     
-    z-index: 1;
     height: 100%;
 }
 
 .contact .wrap .text{
     padding: 9rem 3.2rem;
-    background: red;
+    background-color: var(--font-bg-4);
+
+    position: relative;
 }
 
 .contact .wrap .text h3{
-    font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
     font-size: 3rem;
-    color: white;
+    color: var(--font-fc);
 
     margin-bottom: 1.8rem;
 }
+
+.contact .wrap .text a{
+    color: var(--font-fc-y);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.4rem;
+
+    margin-left: 2rem;
+}
+
+.contact .wrap .text img{
+    position: absolute;
+    top: 23rem;
+    left: 3rem;
+}
+
 
 
 /* @media queries */
