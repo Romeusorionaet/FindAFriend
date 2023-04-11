@@ -1,4 +1,4 @@
-# Finde a Friend
+# Find a Friend
 
 * Projeto com foco em adoção de animais.
 
