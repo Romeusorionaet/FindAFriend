@@ -147,10 +147,6 @@ nav ul li:hover{
     font-weight: 800;
 }
 
-nav ul li:focus{
-    opacity: 1;
-}
-
 /* header / section / container_1 */
 
 .container_1{
@@ -577,7 +573,7 @@ main{
 /* main / contact_team / contact*/
 
 .contact {
-    margin-bottom: 16rem;
+    margin-bottom: 15rem;
 
     height: 30rem;
     padding-top: 3.5%;
@@ -588,18 +584,11 @@ main{
 
 .contact img{
     position: absolute;
-    top: 0;
+    top: .1%;
     right: 0;
     
     max-width: 98%;
     z-index: 1;
-}
-
-.contact .wrap{
-    background-color: var(--font-bg-4);
-    border-radius: 1rem;
-    
-    height: 100%;
 }
 
 .contact .wrap .text{
@@ -607,6 +596,7 @@ main{
     background-color: var(--font-bg-4);
 
     position: relative;
+    border-radius: 1rem;
 }
 
 .contact .wrap .text h3{
@@ -624,7 +614,10 @@ main{
     font-weight: 400;
     font-size: 1.4rem;
 
-    margin-left: 2rem;
+    position: absolute;
+    top: 23rem;
+    left: 5.5rem;
+    z-index: 1;
 }
 
 .contact .wrap .text img{
@@ -633,7 +626,43 @@ main{
     left: 3rem;
 }
 
+/* footer */
 
+footer{
+    background-color: var(--font-bg-2);
+    height: 19rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4.8rem;
+}
+
+footer h2{
+    display: none;
+}
+
+footer .logo_footer{
+    margin: 0 auto;
+}
+
+footer .logo_footer img{
+    margin: 0 auto;
+    width: 3.2rem;
+}
+
+footer .text{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+footer .text span{
+    opacity: .7;
+    font-weight: 400;
+    color: var(--font-fc);
+    font-size: 1.4rem;
+}
 
 /* @media queries */
 
@@ -962,6 +991,68 @@ main{
 
     .contact_team .swiperEquip .card img{
         max-width: 100%;
+    }
+
+    /* contact_team / contact */
+
+    .contact {
+        margin-bottom: 20rem;
+        margin-top: -5rem;
+    }
+    
+    .contact .wrap .text{
+        height: 34rem;
+    }
+
+    .contact img{
+        top: .95vw;
+        max-width: 70%;
+    }
+
+    .contact .wrap .text{
+        padding: 7.4rem 10.2rem;
+    
+        border-radius: 1rem;
+    }
+    
+    .contact .wrap .text h3{
+        font-size: 4.8rem;
+        line-height: 90%;
+    }
+    
+    .contact .wrap .text a{
+        font-size: 1.4rem;
+        left: 13rem;
+    }
+    
+    .contact .wrap .text img{
+        left: 10.5rem;
+    }
+
+    /* footer */
+
+    footer{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        height: 10rem;
+    }
+
+    footer h2{
+        display: inline;
+
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--font-fc);
+    }
+
+    footer .logo_footer{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        margin: 0;
     }
 }
 

@@ -22,7 +22,7 @@
     <title>Explorer GCC</title>
 </head>
 <body>
-    <header>
+    <header id="Home">
         <div class="wrapper_top">
             <div class="wrapper_logo">
                 <img src="./assets/logoDog.svg" alt="logo dog" />
@@ -42,11 +42,11 @@
         <nav class="nav_items hidden">
             <ul>
                 <hr>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre o app</a></li>
-                <li><a href="#">Animais disponíveis</a></li>
-                <li><a href="#">Sobre a FindAFriend</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#AboutApp">Sobre o app</a></li>
+                <li><a href="#Animals">Animais disponíveis</a></li>
+                <li><a href="#AboutFindAFriend">Sobre a FindAFriend</a></li>
+                <li><a href="#Contact">Contato</a></li>
             </ul>
         </nav>
         
@@ -91,7 +91,7 @@
     </header>
 
     <main>
-        <section class="wrapper_description_app">
+        <section id="AboutApp" class="wrapper_description_app">
             <div class="wrapper_title">
                 <h2>Um app não, uma caixinha de amigos...</h2>
             </div>
@@ -133,7 +133,7 @@
             </div>
         </section>
 
-        <section class="wrapper_longFriends">
+        <section id="Animals" class="wrapper_longFriends">
             <div class="text">
                 <h2>Há muitos <br> amigos esperando <br> por você!</h2>
                 <p>
@@ -179,7 +179,7 @@
             </div>
         </section>
 
-        <section class="contact_team">
+        <section id="AboutFindAFriend" class="contact_team">
             <div class="wrapper_text">
                 <h3>Sobre a FindAFriend</h3>
                 <p>
@@ -236,7 +236,7 @@
                 </div>
             </div>
 
-            <div class="contact">
+            <div id="Contact" class="contact">
                 <img src='./assets/contactDog.svg' alt="background dog"/>
 
                 <div class="wrap">
@@ -254,6 +254,18 @@
         </section>
     </main>
     
+    <footer>
+        <div class="logo_footer">
+            <img src="./assets/logoDog.svg" alt="logo dog" />
+            <h2>FindAFriend</h2>
+        </div>
+
+        <div class="text">
+            <span>2023 ® FindAFriend</span>
+            <span>All rights reserved</span>
+        </div>
+    </footer>
+
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
