@@ -11,6 +11,8 @@
 
 <a href="https://www.figma.com/file/WPD3sxRlMMPplN8FYEILJ3/GCC-%231---FindAFriend-(Community)?node-id=0-1&t=loRVt2TNPCGTccsI-0">- Figma</a>
 
+<a href="https://gccfindafriend.netlify.app">Projeto</a>
+
 ## TEC
 
 - HTML
