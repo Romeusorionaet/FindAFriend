@@ -317,6 +317,7 @@ main{
 }
 
 .wrapper_description_app .wrapper_title{
+    background: white;
     width: 100%;
     
     display: flex;
