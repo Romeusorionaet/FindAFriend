@@ -317,7 +317,6 @@ main{
 }
 
 .wrapper_description_app .wrapper_title{
-    background: white;
     width: 100%;
     
     display: flex;
@@ -326,6 +325,7 @@ main{
     
     height: 12rem;
     padding: 0;
+    text-align: center;
 }
 
 .wrapper_description_app h2{
@@ -334,8 +334,6 @@ main{
     line-height: 110%;
     letter-spacing: -0.02em;
     color: var(--font-fc-title-card);
-
-    margin-left: 5rem;
 }
 
 .wrapper_description_app div img{
